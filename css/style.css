@@ -5,7 +5,7 @@
 }
 html {
   font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 header {
   position: relative;
@@ -125,6 +125,8 @@ main {
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
+
+  font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title {
   margin-bottom: 15px;
@@ -188,6 +190,26 @@ main {
   line-height: 1.7rem;
   color: #757575;
 }
+.currency-table--container .up {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/trending-up.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.currency-table--container .down {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/trending-down.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .currency-table--date {
   width: 190px;
   height: 31px;
@@ -210,9 +232,9 @@ main {
 .commissions-table--date p {
   margin: 7px;
   font-size: 1.2rem;
-  font-weight: bold;
   line-height: 1.5px;
 }
+
 .main-product-detail {
   position: relative;
   width: 100%;
