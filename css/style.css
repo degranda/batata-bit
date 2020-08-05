@@ -1,3 +1,15 @@
+:root {
+  /* Colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+  --grey: #bababa;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +28,11 @@ header {
   min-width: 320px;
   height: 334px;
   text-align: center;
-  background: linear-gradient(208.83deg, #201e1c 16.69%, #f7931a 100%);
+  background: linear-gradient(
+    208.83deg,
+    var(--black) 16.69%,
+    var(--bitcoin-orange) 100%
+  );
 }
 header img {
   width: 151px;
@@ -38,14 +54,14 @@ header img {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: white;
+  color: var(--just-white);
 }
 .header--title-container p {
   margin-top: 25px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #ffe9d5;
+  color: var(--soft-orange);
 }
 .header--title-container .header--button {
   position: absolute;
@@ -56,7 +72,7 @@ header img {
   padding: 15px;
   width: 229px;
   height: 48px;
-  background: #faf8f7;
+  background: var(--off-white);
   /* Sombra  */
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border: none;
@@ -64,7 +80,7 @@ header img {
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  color: #201e1c;
+  color: var(--black);
 }
 .header--title-container .header--button span {
   display: inline-block;
@@ -79,7 +95,7 @@ header img {
 main {
   width: 100%;
   height: auto;
-  background-color: #faf8f7;
+  background-color: var(--off-white);
 }
 .main-exchange-container {
   width: 100%;
@@ -109,7 +125,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: #201e1c;
+  color: var(--black);
 }
 .main-exchange-container p {
   margin-bottom: 30px;
@@ -133,14 +149,14 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: #ff9536;
+  color: var(--bitcoin-orange);
 }
 .main-commissions-table .commissions-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: #1a9af7;
+  color: var(--secondary-blue);
 }
 .currency-table--container,
 .commissions-table--container {
@@ -163,9 +179,9 @@ main {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #b5b0ac;
+  color: var(--grey);
   /* border-bottom: 1px solid #faf8f7; */
-  background-color: #fff;
+  background-color: var(--just-white);
 }
 .currency-table--container .table__top-left,
 .commissions-table--container .table__top-left {
@@ -216,7 +232,7 @@ main {
   margin: 0 auto;
   margin-top: 15px;
   padding: 8px;
-  background-color: #ffe9d5;
+  background-color: var(--soft-orange);
   border-radius: 8px;
 }
 .commissions-table--date {
@@ -225,7 +241,7 @@ main {
   margin: 0 auto;
   margin-top: 15px;
   padding: 8px;
-  background-color: #e7f5ff;
+  background-color: var(--soft-blue);
   border-radius: 8px;
 }
 .currency-table--date p,
@@ -241,7 +257,7 @@ main {
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: #201e1c;
+  background-color: var(--black);
 }
 .product-detail--batata-logo {
   position: absolute;
@@ -264,7 +280,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: #fff;
+  color: var(--just-white);
 }
 .product-detail--title p {
   margin-bottom: 20px;
@@ -280,7 +296,7 @@ main {
   height: 152px;
   margin: 15px auto;
   padding: 15px;
-  background-color: #282623;
+  background-color: var(--warm-black);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
 }
@@ -333,7 +349,7 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8rem;
-  color: #fff;
+  color: var(--just-white);
 }
 .product--card_body {
   font-size: 1.4rem;
@@ -356,7 +372,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: white;
+  color: var(--just-white);
 }
 .main-plans-container {
   width: 100%;
@@ -369,7 +385,7 @@ main {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: #201e1c;
+  color: var(--black);
 }
 .main-plans-container p {
   padding-top: 30px;
@@ -395,7 +411,7 @@ main {
   height: 250px;
   margin: 50px 30px 0;
   padding: 0 15px;
-  background-color: #fff;
+  background-color: var(--just-white);
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
@@ -407,9 +423,9 @@ main {
   top: -15px;
   margin: 0;
   padding: 6px;
-  background-color: #f7931a;
+  background-color: var(--bitcoin-orange);
   border-radius: 8px;
-  color: white;
+  color: var(--just-white);
 }
 .plan-card--title {
   padding-top: 30px;
@@ -432,13 +448,13 @@ main {
   width: 151px;
   height: 48px;
   margin-top: 20px;
-  background: #faf8f7;
-  border: 2px solid #f7931a;
+  background: var(--off-white);
+  border: 2px solid var(--bitcoin-orange);
   border-radius: 4px;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.8rem;
-  color: #201e1c;
+  color: var(--black);
 }
 .plan-card--ca span {
   display: inline-block;
@@ -451,7 +467,7 @@ footer {
   display: flex;
   width: 100%;
   height: 150px;
-  background-color: #f7931a;
+  background-color: var(--bitcoin-orange);
 }
 footer section {
   display: flex;
@@ -470,5 +486,5 @@ footer section {
 }
 .left a {
   text-decoration: none;
-  color: white;
+  color: var(--just-white);
 }
